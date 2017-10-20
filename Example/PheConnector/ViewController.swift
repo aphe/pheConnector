@@ -24,9 +24,9 @@ class ViewController: UIViewController {
         phe.routine(Users.login(uName: "Phe", pass: "secure_password123")) { (isSuccess, arg1) in
             switch isSuccess {
             case true:
-                debugPrint(arg1.json)
+                debugPrint(arg1.json as Any)
             case false:
-                debugPrint(arg1.error)
+                debugPrint(arg1.error as Any)
             }
         }
     }
@@ -34,9 +34,9 @@ class ViewController: UIViewController {
         phe.routine(Users.getUser(userName: "Phe")) { (isSuccess, arg1) in
             switch isSuccess {
             case true:
-                debugPrint(arg1.json)
+                debugPrint(arg1.json as Any)
             case false:
-                debugPrint(arg1.error)
+                debugPrint(arg1.error as Any)
             }
         }
     }
