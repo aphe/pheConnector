@@ -1,0 +1,35 @@
+{
+  "name": "PheConnector",
+  "version": "0.1.1",
+  "summary": "A short description of PheConnector.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Afriyandi Setiawan/PheConnector",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Afriyandi Setiawan": "afreeyandi@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Afriyandi Setiawan/PheConnector.git",
+    "tag": "0.1.1"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "PheConnector/Classes/**/*",
+  "subspecs": [
+    {
+      "name": "PheConnector",
+      "dependencies": {
+        "Alamofire": [
+
+        ],
+        "SwiftyJSON": [
+
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+framework module PheConnector {
+  umbrella header "PheConnector-umbrella.h"
+
+  export *
+  module * { export * }
+}

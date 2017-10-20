@@ -1,0 +1,24 @@
+use_frameworks!
+
+target 'PheConnector_Example' do
+  pod 'PheConnector', :path => '../'
+
+  target 'PheConnector_Tests' do
+    inherit! :search_paths
+
+    pod 'Quick'
+    pod 'Nimble'
+    pod 'FBSnapshotTestCase'
+    pod 'Nimble-Snapshots'
+    pod 'OHHTTPStubs/Swift'
+    pod 'Alamofire', '~> 4'
+  end
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '4.0'
+        end
+    end
+end
